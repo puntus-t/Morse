@@ -1,0 +1,106 @@
+body {
+	font-family: Cutive Mono, monospace;
+	background: #000;
+	font-size: 16px;
+	color: #fff;
+}
+
+h1 {
+	position: absolute;
+    color: #fff;
+    top: 374px;
+    left: 37px;
+}
+
+.sky-bg {
+	animation: nev 4s infinite alternate;
+}
+
+.sky,
+.sky2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	z-index: -1;
+}
+
+@keyframes nev {
+50% {
+opacity: 20%;
+border-radius: 50%;
+}
+
+100% {
+opacity: 100%;
+border-radius: 20%;
+}
+}
+
+.on,
+.off {
+	display: block;
+	position: absolute;
+	top: 60px;
+}
+
+.on {
+	display: none;
+}
+
+.abc {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	background: #2f0302;
+	line-height: 22px;
+	padding: 5px 15px;
+	opacity: 80%;
+}
+
+
+/*.info {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}*/
+
+.message {
+	position: absolute;
+	width: 400px;
+	height: 90px;
+	background: #2f0302;
+	line-height: 22px;
+	padding: 20px;
+	opacity: 80%;
+	border-radius: 10px;
+	border: solid 2px #ccc;
+	right: 300px;
+	top: 315px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.message::before {
+     position: absolute;
+     bottom: -15px; 
+     left: 130px;
+     border-left: solid 2px #ccc;
+     border-top: solid 2px #ccc;
+     width: 25px; 
+     height: 25px;
+     transform: rotate(225deg);
+     background: inherit;
+     content: '';
+}
+
+.device {
+	display: block;
+	position: absolute;
+	width: 30%;
+	left: 363px;
+	top: 417px;
+}
+
+audio {
+	repeat: 
+}
